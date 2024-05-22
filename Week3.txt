@@ -1,0 +1,32 @@
+class consumer {
+//properties
+String username;
+String email;
+int age;
+String country;
+bool isMarried;
+
+//Constructor
+consumer(
+  this.username,
+  this.email,
+  this.age,
+  this.country,
+  this.isMarried,
+);
+//method
+void DisplayInfo(){
+  print('username: $username');
+  print('email: $email');
+  print('country: $country');
+  print('age: $age');
+  print('marital status: ${isMarried ? 'married': 'single'}');
+}
+}
+
+void main() {
+  //constructing an instance of a consumer
+  var consumer1 = consumer('Brian Murigi','brianmurigi@gmail.com',30,'Kenya', false);
+  //
+  consumer1.DisplayInfo();
+}
